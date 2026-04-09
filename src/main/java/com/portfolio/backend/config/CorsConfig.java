@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.*;
 
-public class CorisConfig implements WebMvcConfigurer {
+public class CorsConfig implements WebMvcConfigurer {
 	@Value("${app.cors.allowed-origins}")
     private String allowedOrigins;
 

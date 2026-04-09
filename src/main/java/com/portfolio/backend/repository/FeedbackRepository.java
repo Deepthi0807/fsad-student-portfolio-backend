@@ -1,11 +1,12 @@
 package com.portfolio.backend.repository;
 
-import com.portfolio.backend.model.skill;
+import com.portfolio.backend.model.Feedback;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.List;
-
+ 
 @Repository
-public interface skillrepository extends JpaRepository<skill, Long> {
-    List<skill> findByCategory(String category);
+public interface FeedbackRepository extends JpaRepository<Feedback, Long>{
+    List<Feedback> findByProjectId(Long projectId);
+
 }
